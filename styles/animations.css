@@ -1,0 +1,41 @@
+@keyframes burgerTop {
+  50% {
+    transform: translateY(200%);
+  }
+  100% {
+    transform: translateY(200%) rotate(45deg);
+  }
+}
+
+@keyframes burgerBottom {
+  50% {
+    transform: translateY(-200%);
+  }
+  100% {
+    transform: translateY(-200%) rotate(-45deg);
+  }
+}
+
+@keyframes burgerTopReverse {
+  0% {
+    transform: translateY(200%) rotate(45deg);
+  }
+  50% {
+    transform: translateY(200%);
+  }
+  100% {
+    transform: none;
+  }
+}
+
+@keyframes burgerBottomReverse {
+  0% {
+    transform: translateY(-200%) rotate(-45deg);
+  }
+  50% {
+    transform: translateY(-200%);
+  }
+  100% {
+    transform: none;
+  }
+}

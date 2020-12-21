@@ -1,0 +1,273 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: 1.125rem;
+  font-family: 'Libre Franklin';
+  font-weight: 600;
+  background-color: #BECCFF;
+  color: #222;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+h1 {
+  margin-top: 3rem;
+  text-transform: uppercase;
+  /* background-color: rgba(215, 255, 0, 1); */
+}
+
+code {
+  font-weight: bold;
+}
+
+a {
+  color: inherit;
+}
+
+a.active {
+  color: black;
+
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+header .logo {
+  font-size: 2rem;
+  line-height: 1.9rem;
+  background-color: rgba(215, 255, 0, 1);
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0;
+  margin-right: auto;
+}
+
+header .logo a {
+  text-decoration: none;
+}
+
+header label {
+  display: none;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+header label div {
+  background-color: currentColor; /* Aktuelle Textfarbe */
+  height: 0.5rem;
+  margin-bottom: 0.5rem;
+  transition: transform 350ms ease
+}
+
+header label div.top {
+  /* animation: burgerTopReverse 350ms ease forwards; */
+}
+header label div.bottom {
+  margin-bottom: 0;
+  /* animation: burgerBottomReverse 350ms ease forwards; */
+}
+
+header input[type=checkbox] {
+  display: none;
+}
+
+/* hier passiert die Magie: wenn die checkbox abgehakt ist, wird die nav angezeigt und der Burger animiert sich */
+header input[type=checkbox]:checked ~ nav {
+  visibility: visible;
+  opacity: 1;
+  transform: none;
+}
+
+header input[type=checkbox]:checked ~ label .top {
+ transform: translateY(200%) rotate(225deg);
+ /* animation: burgerTop 350ms ease forwards; */
+}
+
+header input[type=checkbox]:checked ~ label .middle {
+  transform: scaleX(0);
+}
+
+header input[type=checkbox]:checked ~ label .bottom {
+  transform: translateY(-200%) rotate(-225deg);
+  /* animation: burgerBottom 350ms ease forwards; */
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li {
+  display: inline-block;
+}
+
+header nav ul li:not(:last-child) {
+  margin-right: 5rem;
+}
+
+header nav ul li a#headerlink {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 1.3rem;
+  margin-bottom: 5rem;
+  background-color: rgba(215, 255, 0, 1);
+
+
+}
+ a#headerlink.active {
+  border-bottom: 5px solid currentColor;
+}
+
+
+
+
+main {
+  margin-top: 78px;
+}
+
+main .left-right {
+  display: flex;
+  border-top: 5px solid black;
+  align-items: flex-end;
+}
+
+main .left-right.left-60 .left {
+  width: 40%;
+}
+
+main .left-right.left-60 .right {
+  width: 60%;
+}
+
+main .left-right.left-40 .left {
+  width: 50%;
+}
+
+main .left-right.left-40 .right {
+  width: 50%;
+}
+
+main .left-right:last-of-type {
+  border-bottom: 5px solid black;
+}
+
+main .left-right .left {
+  width: 55%;
+  padding: 2rem;
+}
+
+main .left-right .right {
+  width: 45%;
+  border-left: 5px solid black;
+}
+
+main .left-right .left img,
+main .left-right .right img {
+  display: block;
+  width: 100%;
+}
+
+
+
+
+
+
+figure {
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  max-width: 360px;
+  height: 360px;
+  overflow: hidden;
+  cursor: none; /* Mauscursor verstecken */
+}
+
+figure::after {
+  content: '';
+  background-color: rgba(0,0,0,0.5);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  opacity: 0;
+  transition: opacity 500ms ease;
+}
+
+figure:hover figcaption {
+  opacity: 1;
+  visibility: visible;
+  transform: none;
+}
+
+figure:hover::after {
+  opacity: 1;
+}
+
+figure:hover img {
+  transform: scale(1.1);
+}
+
+figure img {
+  display: block;
+  position: absolute;
+  transition: transform 500ms ease;
+}
+
+figcaption {
+  position: absolute; /* Könnte auch "relative" sein, wenn sie nicht dem Cursor folgen soll */
+  top: 0; /* braucht man nur, wenn sie dem Cursor folgen soll */
+  left: 0; /* braucht man nur, wenn sie dem Cursor folgen soll */
+  z-index: 1;
+  pointer-events: none; /* braucht man nur, wenn sie dem Cursor folgen soll */
+  color: white;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 500ms ease, visibility 500ms ease;
+}
+
+
+
+
+
+
+
+
+footer {
+  margin-top: auto;
+  background-color: white;
+  text-align: left;
+  padding: 0rem;
+  color: rgba(0, 0, 0, 0.75);
+}
+a#footerlink {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 0.7rem;
+  margin-bottom: 4;
+  background-color: rgba(215, 255, 0, 1);
+}
+footer ul {
+  list-style-type: none;
+  font-size: 0.7rem;
+  font-weight: 700;
+}
