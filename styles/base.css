@@ -14,10 +14,40 @@ body {
   min-height: 100vh;
 }
 
-h1 {
+h2 {
+  font-weight: 800;
+  font-size: 2rem;
   margin-top: 3rem;
   text-transform: uppercase;
-  /* background-color: rgba(215, 255, 0, 1); */
+}
+
+.with-background {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+}
+
+.with-background::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0.21875em;
+  left: 0;
+  right: 0;
+  bottom: 0.25em;
+  background-color: rgba(215, 255, 0, 1);
+  z-index: -1;
+
+}
+
+span.projectheader {
+  position: relative;
+  z-index: 1;
+}
+
+p.kursiv {
+  font-style: italic;
+  font-weight: 600;
 }
 
 code {
@@ -30,26 +60,23 @@ a {
 
 a.active {
   color: black;
-
 }
 
 header {
   display: flex;
   align-items: center;
-  padding: 1.5rem;
+  padding: 1rem;
   background-color: white;
   position: fixed;
   top: 0;
   left: 0;
   border-bottom: 5px solid black;
   width: 100%;
+  z-index: 2;
 }
-
 
 header .logo {
   font-size: 2rem;
-  line-height: 1.9rem;
-  background-color: rgba(215, 255, 0, 1);
   font-weight: 800;
   text-transform: uppercase;
   margin: 0;
@@ -58,6 +85,25 @@ header .logo {
 
 header .logo a {
   text-decoration: none;
+}
+
+a.headerlink {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 1.3rem;
+  margin-bottom: 5rem;
+  background-color: rgba(215, 255, 0, 1);
+}
+
+ a.headerlink-active {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 1.3rem;
+  margin-bottom: 5rem;
+  background-color: rgba(215, 255, 0, 1);
+  border-bottom: 5px solid currentColor;
 }
 
 header label {
@@ -120,31 +166,51 @@ header nav ul li:not(:last-child) {
   margin-right: 5rem;
 }
 
-header nav ul li a#headerlink {
-  text-decoration: none;
-  text-transform: uppercase;
+
+
+
+
+nav.sidebar {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 71px;
+  width: 50px;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  border-right: 5px solid black;
+}
+
+nav.sidebar p{
   font-weight: 800;
-  font-size: 1.3rem;
-  margin-bottom: 5rem;
-  background-color: rgba(215, 255, 0, 1);
-
-
+  text-transform: uppercase;
+  margin-top: auto;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 2rem;
+  border-bottom: 5px solid black;
+  padding-bottom: 2rem;
+  line-height: 50px;
 }
- a#headerlink.active {
-  border-bottom: 5px solid currentColor;
+
+nav.sidebar a {
+  background-color: black;
+  /* padding: 8px; */
 }
 
-
-span#projectheader {
-  background-color: rgba(215, 255, 0, 1);
-  margin: 0;
-  padding: 0;
+nav.sidebar a svg {
+  display: block;
 }
 
 
 
 main {
-  margin-top: 78px;
+  margin-top: 76px;
+  margin-left: 50px;
 }
 
 main .left-right {
@@ -191,76 +257,49 @@ main .left-right .right {
   border-left: 5px solid black;
 }
 
-main .left-right .left img,
-main .left-right .right img {
-  display: block;
-  width: 100%;
-}
 
 
 
-
-
-
-figure {
-  /* margin: 1rem; */
+main .left-right .left figure,
+main .left-right .right figure {
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
   width: 100%;
-  /* max-width: 360px; */
-  /* height: 360px; */
-  /* overflow: hidden; */
-  cursor: none; /* Mauscursor verstecken */
+  margin: 0;
 }
 
-figure::after {
-  content: '';
-  background-color: rgba(0,0,0,0.5);
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
-  display: block;
-  opacity: 0;
-  transition: opacity 500ms ease;
-}
-
-figure:hover figcaption {
+main .left-right .left figure:hover figcaption,
+main .left-right .right figure:hover figcaption {
   opacity: 1;
   visibility: visible;
   transform: none;
 }
 
-figure:hover::after {
-  opacity: 1;
-}
-
-figure:hover img {
-  transform: scale(1.1);
-}
-
-figure img {
+main .left-right .left figure img,
+main .left-right .right figure img {
   display: block;
-  position: absolute;
-  transition: transform 500ms ease;
+  width: 100%;
 }
 
-figcaption {
+main .left-right .left figure figcaption,
+main .left-right .right figure figcaption {
+
   position: absolute; /* Könnte auch "relative" sein, wenn sie nicht dem Cursor folgen soll */
   top: 0; /* braucht man nur, wenn sie dem Cursor folgen soll */
-  left: 0; /* braucht man nur, wenn sie dem Cursor folgen soll */
+  left: 1rem; /* braucht man nur, wenn sie dem Cursor folgen soll */
   z-index: 1;
   pointer-events: none; /* braucht man nur, wenn sie dem Cursor folgen soll */
-  color: white;
+  text-transform: uppercase;
   visibility: hidden;
   opacity: 0;
-  transition: opacity 500ms ease, visibility 500ms ease;
+  font-style: italic;
+  font-weight: 600;
+  color: black;
+  font-size: 10px;
+  /* transition: opacity 500ms ease, visibility 500ms ease; */
 }
-
-
 
 
 
@@ -268,19 +307,19 @@ figcaption {
 
 
 footer {
+  margin-left: 40px;
   margin-top: auto;
   background-color: white;
   text-align: left;
   padding: 0rem;
-  color: rgba(0, 0, 0, 0.75);
 }
-a#footerlink {
+
+footer a {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 800;
   font-size: 0.7rem;
   margin-bottom: 4;
-  background-color: rgba(215, 255, 0, 1);
   overflow: hidden;
 }
 footer ul {
@@ -289,9 +328,10 @@ footer ul {
   font-weight: 700;
 }
 p#copyright {
-  font-size: 0.7rem;
+  font-size: 0.6rem;
   font-weight: 700;
   align-content: end;
   margin-right: 1rem;
   float: right;
+  margin-top: auto;
 }

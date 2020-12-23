@@ -15,7 +15,7 @@
   </head>
   <body>
     <header class="menu">
-      <p class="logo"><a href="/" >Jasmin Stephan</a></p>
+      <p class="logo"><a class="with-background" href="/" >Jasmin Stephan</a></p>
       <input type="checkbox" id="menuCheckbox">
       <label for="menuCheckbox">
         <div class="top"></div>
@@ -25,73 +25,94 @@
       <nav>
         <ul>
           <li>
-            <a id="headerlink" class="active" href="/">Work</a>
+            <a class="headerlink-active" href="/">Work</a>
           </li>
           <li>
-            <a id="headerlink" href="/about.html">About</a>
+            <a class="headerlink" href="/about.html">About</a>
           </li>
           <li>
-            <a id="headerlink" href="/contact.html">Contact</a>
+            <a class="headerlink" href="/contact.html">Contact</a>
           </li>
         </ul>
       </nav>
     </header>
-    <main>
-      <section class="left-right left-60">
-        <div class="left">
-          <h1><span id="projectheader">Projekt Play</span></h1>
-          <p>Das DOC. ist das Fakultäts Magazin der Fakultät für Design der Hochschule München.</p>
-          <p>Zum Projekt &gt;&gt;</p>
-        </div>
-        <div class="right">
+    <nav class="sidebar">
+      <a href="/" onclick="history.back();return false;">
+        <svg width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M13 37V11" stroke="white" stroke-width="5"/>
+          <path d="M37 13L11 13" stroke="white" stroke-width="5"/>
+          <path d="M14 13L35 34" stroke="white" stroke-width="5"/>
+        </svg>
+      </a>
+      <p>Work</p>
+    </nav>
+  <main>
+    <section class="left-right left-60">
+      <div class="left">
+        <h2><span class="with-background">Projekt Play</span></h2>
+        <p>Das DOC. ist das Fakultäts Magazin der Fakultät für Design der Hochschule München.</p>
+        <p class=kursiv>Zum Projekt &gt;&gt;</p>
+      </div>
+      <div class="right">
+        <figure>
           <img src="./images/projekt-play/projekt-play-index.png" alt="Projekt Play">
-          <!-- <figcaption>Folks on Beach</figcaption> -->
-        </div>
-      </section>
-      <section class="left-right">
-        <div class="left">
-          <h1><span id="projectheader">DOC.-Magazin</span></h1>
-          <p>Das DOC. ist das Fakultäts Magazin der Fakultät für Design der Hochschule München.</p>
-          <p>Zum Projekt &gt;&gt;</p>
-        </div>
-        <div class="right">
+          <figcaption>3. Semester, Foto: Jasmin Stephan</figcaption>
+        </figure>
+      </div>
+    </section>
+    <section class="left-right">
+      <div class="left">
+        <h2 class="with-background"><span class="projectheader">DOC.-Magazin</span></h2>
+        <p>Das DOC. ist das Fakultäts Magazin der Fakultät für Design der Hochschule München.</p>
+        <p class=kursiv>Zum Projekt &gt;&gt;</p>
+      </div>
+      <div class="right">
+        <figure>
           <img src="./images/doc-magazin/doc-magazin-indexseite.png" alt="DOC.-Magazin">
-        </div>
-      </section>
-      <section class="left-right left-60">
-        <div class="left">
-          <h1><span id="projectheader">Projekt Licht</span></h1>
-          <p>Das DOC. ist das Fakultäts Magazin der Fakultät für Design der Hochschule München.</p>
-          <p>Zum Projekt &gt;&gt;</p>
-        </div>
-        <div class="right">
+          <figcaption>3./4. Semester, Foto: Maximilian Bridts</figcaption>
+        </figure>
+      </div>
+    </section>
+    <section class="left-right left-60">
+      <div class="left">
+        <h2 class="with-background"><span class="projectheader">Projekt Licht</span></h2>
+        <p>Das DOC. ist das Fakultäts Magazin der Fakultät für Design der Hochschule München.</p>
+        <p class=kursiv>Zum Projekt &gt;&gt;</p>
+      </div>
+      <div class="right">
+        <figure>
           <img src="./images/trilo/trilo-index.png" alt="Trilo">
-        </div>
-      </section>
-      <section class="left-right left-40">
-        <div class="left">
-          <h1><span id="projectheader">Papiermodell</span></h1>
-          <p>Das DOC. ist das Fakultäts Magazin der Fakultät für Design der Hochschule München.</p>
-          <p>Zum Projekt &gt;&gt;</p>
-        </div>
-        <div class="right">
+          <figcaption>5. Semester, Foto:</figcaption>
+        </figure>
+      </div>
+    </section>
+    <section class="left-right left-40">
+      <div class="left">
+        <h2 class="with-background"><span class="projectheader">Papiermodell</span></h2>
+        <p>Das DOC. ist das Fakultäts Magazin der Fakultät für Design der Hochschule München.</p>
+        <p class=kursiv>Zum Projekt &gt;&gt;</p>
+      </div>
+      <div class="right">
+        <figure>
           <img src="./images/papiermodell/papiermodell-index.png" alt="Trilo">
-        </div>
-      </section>
-      <section class="left-right left-45">
-        <div class="left">
-          <h1><span id="projectheader">Claymodell</span></h1>
-          <p>Das DOC. ist das Fakultäts Magazin der Fakultät für Design der Hochschule München.</p>
-          <p>Zum Projekt &gt;&gt;</p>
-        </div>
-        <div class="right">
-          <!-- <figure> -->
-            <img src="./images/claymodell/claymodell-index.png" alt="Trilo">
-          <!-- </figure> -->
-          <!-- <figcaption>Claymodell caption</figcaption> -->
-        </div>
-      </section>
-    </main>
+          <figcaption>Claymodell caption</figcaption>
+        </figure>
+      </div>
+    </section>
+    <section class="left-right left-45">
+      <div class="left">
+        <h2 class="with-background"><span class="projectheader">Claymodell</span></h2>
+        <p>Das DOC. ist das Fakultäts Magazin der Fakultät für Design der Hochschule München.</p>
+        <p class=kursiv>Zum Projekt &gt;&gt;</p>
+      </div>
+      <div class="right">
+        <figure>
+          <img src="./images/claymodell/claymodell-index.png" alt="Trilo">
+          <figcaption>Claymodell caption</figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
     <footer>
       <label>
         <div class="top"></div>
@@ -101,15 +122,11 @@
       <nav>
         <ul>
           <li>
-            <a id="footerlink" href="/impressum.html">Impressum,</a> <a id="footerlink" href="/impressum.html">Instagram</a>
-        <p id="copyright">© 2020 Jasmin Stephan</p>
+            <a class="with-background" href="/impressum.html">Impressum,</a>
+            <a class="with-background" href="/impressum.html">Instagram</a>
+            <p id="copyright">© 2020 Jasmin Stephan</p>
           </li>
         </ul>
-        <!-- <ul> -->
-        <!--   <li> -->
-        <!--     <p id="copyright">© 2020 Jasmin Stephan</p> -->
-        <!--   </li> -->
-        <!-- </ul> -->
       </nav>
     </footer>
     <script type="text/javascript">

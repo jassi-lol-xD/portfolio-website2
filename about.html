@@ -3,15 +3,19 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>About | Jasmin Stephan</title>
+    <title>Jasmin Stephan</title>
     <link rel="stylesheet" href="/styles/base.css">
     <link rel="stylesheet" href="/styles/animations.css">
     <link rel="stylesheet" href="/styles/fonts.css">
     <link rel="stylesheet" href="/styles/mobile.css" media="screen and (max-width: 40rem)">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
+
   </head>
   <body>
     <header class="menu">
-      <p class="logo"><a href="/">Jasmin<br />Stephan</a></p>
+      <p class="logo"><a href="/" >Jasmin Stephan</a></p>
       <input type="checkbox" id="menuCheckbox">
       <label for="menuCheckbox">
         <div class="top"></div>
@@ -21,7 +25,7 @@
       <nav>
         <ul>
           <li>
-            <a id="headerlink"href="/">Work</a>
+            <a id="headerlink" href="/">Work</a>
           </li>
           <li>
             <a id="headerlink" class="active" href="/about.html">About</a>
@@ -32,24 +36,85 @@
         </ul>
       </nav>
     </header>
-    <main>
-      <section>
-        <h1>Das ist die About Seite</h1>
-      </section>
-      <section class="fake-content">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </section>
-    </main>
+    <nav class="sidebar">
+      <a href="/" onclick="history.back();return false;">
+        <svg class="arrow" width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M13 37V11" stroke="white" stroke-width="5"/>
+          <path d="M37 13L11 13" stroke="white" stroke-width="5"/>
+          <path d="M14 13L35 34" stroke="white" stroke-width="5"/>
+        </svg>
+      </a>
+      <p>startseite</p>
+    </nav>
+  <main>
+    <section class="left-right left-60">
+      <div class="left">
+        <h1><span class="projectheader">Projekt Play</span></h1>
+        <p>Das DOC. ist das Fakultäts Magazin der Fakultät für Design der Hochschule München.</p>
+        <p class=kursiv>Zum Projekt &gt;&gt;</p>
+      </div>
+      <div class="right">
+        <figure>
+          <img src="./images/projekt-play/projekt-play-index.png" alt="Projekt Play">
+          <figcaption>3. Semester, Foto: Jasmin Stephan</figcaption>
+        </figure>
+      </div>
+    </section>
+    <section class="left-right">
+      <div class="left">
+        <h1><span class="projectheader">DOC.-Magazin</span></h1>
+        <p>Das DOC. ist das Fakultäts Magazin der Fakultät für Design der Hochschule München.</p>
+        <p class=kursiv>Zum Projekt &gt;&gt;</p>
+      </div>
+      <div class="right">
+        <figure>
+          <img src="./images/doc-magazin/doc-magazin-indexseite.png" alt="DOC.-Magazin">
+          <figcaption>3./4. Semester, Foto: Maximilian Bridts</figcaption>
+        </figure>
+      </div>
+    </section>
+    <section class="left-right left-60">
+      <div class="left">
+        <h1><span class="projectheader">Projekt Licht</span></h1>
+        <p>Das DOC. ist das Fakultäts Magazin der Fakultät für Design der Hochschule München.</p>
+        <p class=kursiv>Zum Projekt &gt;&gt;</p>
+      </div>
+      <div class="right">
+        <figure>
+          <img src="./images/trilo/trilo-index.png" alt="Trilo">
+          <figcaption>5. Semester, Foto:</figcaption>
+        </figure>
+      </div>
+    </section>
+    <section class="left-right left-40">
+      <div class="left">
+        <h1><span class="projectheader">Papiermodell</span></h1>
+        <p>Das DOC. ist das Fakultäts Magazin der Fakultät für Design der Hochschule München.</p>
+        <p class=kursiv>Zum Projekt &gt;&gt;</p>
+      </div>
+      <div class="right">
+        <figure>
+          <img src="./images/papiermodell/papiermodell-index.png" alt="Trilo">
+          <figcaption>Claymodell caption</figcaption>
+        </figure>
+      </div>
+    </section>
+    <section class="left-right left-45">
+      <div class="left">
+        <h1><span class="projectheader">Claymodell</span></h1>
+        <p>Das DOC. ist das Fakultäts Magazin der Fakultät für Design der Hochschule München.</p>
+        <p class=kursiv>Zum Projekt &gt;&gt;</p>
+      </div>
+      <div class="right">
+        <figure>
+          <img src="./images/claymodell/claymodell-index.png" alt="Trilo">
+          <figcaption>Claymodell caption</figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
     <footer>
+      <label>
         <div class="top"></div>
         <div class="middle"></div>
         <div class="bottom"></div>
@@ -57,13 +122,28 @@
       <nav>
         <ul>
           <li>
-            <a href="/impressum.html">Impressum</a>
-          </li>
-          <li>
-            <p>© 2020 Jasmin Stephan</p>
+            <a id="footerlink" href="/impressum.html">Impressum,</a> <a id="footerlink" href="/impressum.html">Instagram</a>
+            <p id="copyright">© 2020 Jasmin Stephan</p>
           </li>
         </ul>
       </nav>
     </footer>
+    <script type="text/javascript">
+      // Unoptimierter JavaScript Code! Damit die figcaption dem Mauscursor folgt
+      // Für jedes Figure Element auf der Seite
+      document.querySelectorAll('figure').forEach((figure) => {
+        // Füge einen Event-Listener für das "mousemove" Event hinzu
+        figure.addEventListener('mousemove', (e) => {
+          const x = e.clientX; // Mausposition X-Achse
+          const y = e.clientY; // Mausposition Y-Achse
+          const self = e.currentTarget; // Das Figure Element
+          const selfRect = self.getBoundingClientRect(); // Die Position und Maße des Figure Elements auf dem Bildschirm
+          const caption = self.querySelector('figcaption'); // Die Caption des Figure Elements
+          // Wenn die Caption existiert, dann zur Mausposition transformieren, damit sie "dem Cursor folgt"
+          // da Position der Caption relativ zur Figure, muss die Position der Figure von den Mauskoordinaten abgezogen werden
+          if (caption) caption.style.transform = `translate(${x - selfRect.left}px, ${y - selfRect.top}px)`;
+        }, { passive: true }); // passiver Listener, für zumindest ein bisschen Optimisierung
+      });
+    </script>
   </body>
 </html>
