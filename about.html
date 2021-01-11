@@ -15,7 +15,7 @@
   </head>
   <body>
     <header class="menu">
-      <p class="logo"><a href="/" >Jasmin Stephan</a></p>
+      <p class="logo"><a class="with-background" href="/" >Jasmin Stephan</a></p>
       <input type="checkbox" id="menuCheckbox">
       <label for="menuCheckbox">
         <div class="top"></div>
@@ -25,90 +25,49 @@
       <nav>
         <ul>
           <li>
-            <a id="headerlink" href="/">Work</a>
+            <a class="with-background headerlink" href="/index.html">Work</a>
           </li>
           <li>
-            <a id="headerlink" class="active" href="/about.html">About</a>
+            <a class="with-background headerlink-active" href="/">About</a>
           </li>
           <li>
-            <a id="headerlink" href="/contact.html">Contact</a>
+            <a class="with-background headerlink" href="/contact.html">Contact</a>
           </li>
         </ul>
       </nav>
     </header>
     <nav class="sidebar">
       <a href="/" onclick="history.back();return false;">
-        <svg class="arrow" width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M13 37V11" stroke="white" stroke-width="5"/>
           <path d="M37 13L11 13" stroke="white" stroke-width="5"/>
           <path d="M14 13L35 34" stroke="white" stroke-width="5"/>
         </svg>
       </a>
-      <p>startseite</p>
+      <p>About</p>
     </nav>
   <main>
     <section class="left-right left-60">
       <div class="left">
-        <h1><span class="projectheader">Projekt Play</span></h1>
-        <p>Das DOC. ist das Fakultäts Magazin der Fakultät für Design der Hochschule München.</p>
-        <p class=kursiv>Zum Projekt &gt;&gt;</p>
+        <h2><span class="with-background">About me ...</span></h2>
+        <p>Hi, mein Name ist Jasmin Stephan, ich studiere Industriedesign, habe aber mit drei
+          Semester Kommuniaktionsdesign gestartet.
+          Davor hab ich eine Ausbildung zur Mediengestalterin in Digital und Print
+          mit dem Schwerpunkt Gestaltung und Technik in einer Druckerei absolviert.
+          Ich selbst sehe mich als eine Art Kommunikations- und Industriedesign-Hybridin an.</p>
+        <p>In meinen Arbeiten spiegelt sich vor allem meine Faszination für Spiel und alles
+          rund um die Sprache wieder. Dabei versuche ich spielerisch und intuitiv meine Mitmenschen
+          zu erreichen.</p>
+        <p>Im 3. und 4. Semester habe ich die Teamleitung unseres Fakultätsmagazins „DOC.“ übernommen
+          und zusammen mit 18 KommilitonInnen und unserem leitenden Professor Xuyen Dam die 16. Ausgabe,
+          das „RE-DOC.“ herausgebracht.
+        </p>
+        <a class="kursiv" href="https://instagram.com/_jsmpn?igshid=smghe464it7r">Instagram &gt;&gt;</a>
       </div>
       <div class="right">
         <figure>
-          <img src="./images/projekt-play/projekt-play-index.png" alt="Projekt Play">
-          <figcaption>3. Semester, Foto: Jasmin Stephan</figcaption>
-        </figure>
-      </div>
-    </section>
-    <section class="left-right">
-      <div class="left">
-        <h1><span class="projectheader">DOC.-Magazin</span></h1>
-        <p>Das DOC. ist das Fakultäts Magazin der Fakultät für Design der Hochschule München.</p>
-        <p class=kursiv>Zum Projekt &gt;&gt;</p>
-      </div>
-      <div class="right">
-        <figure>
-          <img src="./images/doc-magazin/doc-magazin-indexseite.png" alt="DOC.-Magazin">
-          <figcaption>3./4. Semester, Foto: Maximilian Bridts</figcaption>
-        </figure>
-      </div>
-    </section>
-    <section class="left-right left-60">
-      <div class="left">
-        <h1><span class="projectheader">Projekt Licht</span></h1>
-        <p>Das DOC. ist das Fakultäts Magazin der Fakultät für Design der Hochschule München.</p>
-        <p class=kursiv>Zum Projekt &gt;&gt;</p>
-      </div>
-      <div class="right">
-        <figure>
-          <img src="./images/trilo/trilo-index.png" alt="Trilo">
-          <figcaption>5. Semester, Foto:</figcaption>
-        </figure>
-      </div>
-    </section>
-    <section class="left-right left-40">
-      <div class="left">
-        <h1><span class="projectheader">Papiermodell</span></h1>
-        <p>Das DOC. ist das Fakultäts Magazin der Fakultät für Design der Hochschule München.</p>
-        <p class=kursiv>Zum Projekt &gt;&gt;</p>
-      </div>
-      <div class="right">
-        <figure>
-          <img src="./images/papiermodell/papiermodell-index.png" alt="Trilo">
-          <figcaption>Claymodell caption</figcaption>
-        </figure>
-      </div>
-    </section>
-    <section class="left-right left-45">
-      <div class="left">
-        <h1><span class="projectheader">Claymodell</span></h1>
-        <p>Das DOC. ist das Fakultäts Magazin der Fakultät für Design der Hochschule München.</p>
-        <p class=kursiv>Zum Projekt &gt;&gt;</p>
-      </div>
-      <div class="right">
-        <figure>
-          <img src="./images/claymodell/claymodell-index.png" alt="Trilo">
-          <figcaption>Claymodell caption</figcaption>
+          <a href="about.html"><img src="./images/about-me.png" alt="About me"></a>
+          <figcaption>Foto: Nicola Goetz</figcaption>
         </figure>
       </div>
     </section>
@@ -122,7 +81,8 @@
       <nav>
         <ul>
           <li>
-            <a id="footerlink" href="/impressum.html">Impressum,</a> <a id="footerlink" href="/impressum.html">Instagram</a>
+            <a class="with-background" href="/impressum.html">Impressum,</a>
+            <a class="with-background" href="https://instagram.com/_jsmpn?igshid=smghe464it7r">Instagram</a>
             <p id="copyright">© 2020 Jasmin Stephan</p>
           </li>
         </ul>

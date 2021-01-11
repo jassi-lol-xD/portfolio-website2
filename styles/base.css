@@ -7,11 +7,14 @@ body {
   font-size: 1.125rem;
   font-family: 'Libre Franklin', sans-serif;
   font-weight: 600;
-  background-color: #BECCFF;
   color: #222;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+}
+
+.body-withbackground {
+  background-color: #BECCFF;
 }
 
 h2 {
@@ -45,9 +48,11 @@ span.projectheader {
   z-index: 1;
 }
 
-p.kursiv {
+a.kursiv {
+  text-decoration: none;
   font-style: italic;
   font-weight: 600;
+  cursor: ne-resize;
 }
 
 code {
@@ -85,6 +90,7 @@ header .logo {
 
 header .logo a {
   text-decoration: none;
+  cursor: nw-resize;
 }
 
 a.headerlink {
@@ -92,8 +98,8 @@ a.headerlink {
   text-transform: uppercase;
   font-weight: 800;
   font-size: 1.3rem;
-  margin-bottom: 5rem;
-  background-color: rgba(215, 255, 0, 1);
+  cursor: ne-resize;
+  margin-top: 0.6rem;
 }
 
  a.headerlink-active {
@@ -101,9 +107,8 @@ a.headerlink {
   text-transform: uppercase;
   font-weight: 800;
   font-size: 1.3rem;
-  margin-bottom: 5rem;
-  background-color: rgba(215, 255, 0, 1);
   border-bottom: 5px solid currentColor;
+  cursor: ne-resize;
 }
 
 header label {
@@ -174,7 +179,7 @@ nav.sidebar {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-top: 71px;
+  margin-top: 73px;
   width: 50px;
   background-color: white;
   position: fixed;
@@ -191,14 +196,15 @@ nav.sidebar p{
   transform: rotate(180deg);
   margin-left: 0;
   margin-right: 0;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
   border-bottom: 5px solid black;
-  padding-bottom: 2rem;
+  padding-bottom: 2.5rem;
   line-height: 50px;
 }
 
 nav.sidebar a {
   background-color: black;
+  cursor: nw-resize;
   /* padding: 8px; */
 }
 
@@ -207,6 +213,13 @@ nav.sidebar a svg {
 }
 
 
+
+.main-impressum {
+  margin-top: 130px;
+  margin-left: 80px;
+  margin-bottom: 50px;
+  margin-right: 200px;
+}
 
 main {
   margin-top: 76px;
@@ -219,12 +232,57 @@ main .left-right {
   align-items: flex-end;
 }
 
+main .left-right .left {
+  width: 55%;
+  padding-left: 2rem;
+  padding-right: 8rem;
+  padding-bottom: 4rem;
+}
+
+main .left-right .right {
+  width: 45%;
+  border-left: 5px solid black;
+}
+
+
+main .left-right.left-65 .left {
+  width: 35%;
+}
+
+main .left-right.left-65 .right {
+  width: 65%;
+}
+
 main .left-right.left-60 .left {
   width: 40%;
 }
 
 main .left-right.left-60 .right {
   width: 60%;
+}
+
+main .left-right.left-57 .left {
+  width: 43%;
+}
+
+main .left-right.left-57 .right {
+  width: 57%;
+}
+
+main .left-right.left-55 .left {
+  width: 45%;
+}
+
+main .left-right.left-55 .right {
+  width: 55%;
+}
+
+main .left-right.left-50 .left {
+  width: 50%;
+}
+
+main .left-right.left-50 .right {
+  width: 50%;
 }
 
 main .left-right.left-45 .left {
@@ -247,15 +305,7 @@ main .left-right:last-of-type {
   /* border-top: 5px solid black; */
 }
 
-main .left-right .left {
-  width: 55%;
-  padding: 2rem;
-}
 
-main .left-right .right {
-  width: 45%;
-  border-left: 5px solid black;
-}
 
 
 
@@ -281,6 +331,7 @@ main .left-right .left figure img,
 main .left-right .right figure img {
   display: block;
   width: 100%;
+  cursor: ne-resize;
 }
 
 main .left-right .left figure figcaption,
@@ -288,23 +339,26 @@ main .left-right .right figure figcaption {
 
   position: absolute; /* Könnte auch "relative" sein, wenn sie nicht dem Cursor folgen soll */
   top: 0; /* braucht man nur, wenn sie dem Cursor folgen soll */
-  left: 1rem; /* braucht man nur, wenn sie dem Cursor folgen soll */
+  left: 0.7rem; /* braucht man nur, wenn sie dem Cursor folgen soll */
   z-index: 1;
   pointer-events: none; /* braucht man nur, wenn sie dem Cursor folgen soll */
   text-transform: uppercase;
   visibility: hidden;
   opacity: 0;
-  font-style: italic;
-  font-weight: 600;
+  font-family: 'Iceland';
+  font-style: normal;
+  font-weight: 400;
   color: black;
-  font-size: 10px;
+  font-size: 15px;
   /* transition: opacity 500ms ease, visibility 500ms ease; */
 }
 
 
 
-
-
+.footer-impressum {
+  margin-top: auto;
+  border-top: 5px solid black;
+}
 
 footer {
   margin-left: 40px;
@@ -312,14 +366,13 @@ footer {
   background-color: white;
   text-align: left;
   padding: 0rem;
+  flex-shrink: 0;
 }
-
 footer a {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 800;
   font-size: 0.7rem;
-  margin-bottom: 4;
   overflow: hidden;
 }
 footer ul {

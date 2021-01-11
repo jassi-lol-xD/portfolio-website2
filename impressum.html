@@ -8,10 +8,14 @@
     <link rel="stylesheet" href="/styles/animations.css">
     <link rel="stylesheet" href="/styles/fonts.css">
     <link rel="stylesheet" href="/styles/mobile.css" media="screen and (max-width: 40rem)">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
+
   </head>
   <body>
     <header class="menu">
-      <p class="logo"><a href="/" >Jasmin <br />Stephan</a></p>
+      <p class="logo"><a class="with-background" href="/" >Jasmin Stephan</a></p>
       <input type="checkbox" id="menuCheckbox">
       <label for="menuCheckbox">
         <div class="top"></div>
@@ -21,32 +25,65 @@
       <nav>
         <ul>
           <li>
-            <a id="headerlink" href="/">Work</a>
+            <a class="with-background headerlink" href="/index.html">Work</a>
           </li>
           <li>
-            <a id="headerlink" href="/about.html">About</a>
+            <a class="with-background headerlink" href="/about.html">About</a>
           </li>
           <li>
-            <a id="headerlink" href="/contact.html">Contact</a>
+            <a class="with-background headerlink" href="/contact.html">Contact</a>
           </li>
         </ul>
       </nav>
     </header>
-    <main>
-      <section>
-        <h1>Impressum</h1>
-        <p>In dieser kleinen Demo könnt ihr sehen, wie man ganz ohne JavaScript ein Hamburger-Menü erstellen kann.</p>
-        <p>Außerdem seht ihr, wie Media-Queries verwendet werden können, um zwischen einem klassischen Ribbon-Menü auf dem Desktop und einem Hamburger-Menü auf Mobile zu wechseln.</p>
-        <p>Hamburger-Menüs sind in den letzten Jahren immer mehr in Verruf geraten (zu Recht, es gibt bessere Lösungen!), aber dennoch sind sie noch immer einese der häufigsten Interface-Elemente auf mobilen Endgeräten.</p>
-        <p>Dennoch solltet ihr in professionellen Web-Projekten immer die Zielgruppe im Hinterkopf behalten: versteht sie das Konzept eines Hamburger-Menüs? Oftmals ist es besser, neben den Hamburger außerdem noch das Label "Menü" unterzubringen, damit es für jeden klar wird, dass es sich um ein Menü handelt.</p>
-        <p><strong>Öffnet diese Seite auf einem Handy, oder aktiviert in den Dev-Tools den "mobile"-Modus, um das Hamburger Menü zu sehen.</strong></p>
-        <h2>Datenschutzerklärung</h2>
-        <p>Das hier präsentierte Beispiel ist eine pure CSS-Lösung, d.h. sie verwendet keinerlei JavaScript und läuft auch, wenn JS im Browser deaktiviert wurde.</p>
-        <p>Allerdings bringt das auch den Nachteil mit sich, dass das Menü z.B. nicht durch einen Klick außerhalb geschlossen werden kann und zusätzliches HTML-Markup erfordert.</p>
-        <p>Am Ende des Tages verwendet man also häufig eine hybride Lösung, oder sogar eine komplett auf JS basierende Lösung mit einem Fallback für den sehr geringen Prozentsatz an Menschen, die in ihrem Browser die Ausführung von JavaScript blockieren.</p>
-      </section>
-    </main>
-    <footer>
+    <nav class="sidebar">
+      <a href="/" onclick="history.back();return false;">
+        <svg width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M13 37V11" stroke="white" stroke-width="5"/>
+          <path d="M37 13L11 13" stroke="white" stroke-width="5"/>
+          <path d="M14 13L35 34" stroke="white" stroke-width="5"/>
+        </svg>
+      </a>
+      <p>Impressum</p>
+    </nav>
+  <main class="main-impressum">
+    <section>
+      <div>
+        <h2><span class="with-background">Impressum</span></h2>
+        <p>Angaben gemäß § 5 TMG</p>
+        <p>Jasmin Stephan<br/>
+          Orleansstr. 41<br/>
+          81667 München</p>
+
+        <p>Vertreten durch:<br/>
+          Jasmin Stephan</p>
+
+        <p>Kontakt:<br/>
+          Telefon: +49(0)174 9737229<br/>
+          E-Mail: hello@jasmin-stephan.com<br/><br/><br/><br/>
+
+
+          Haftungsausschluss:<br/><br/>
+
+          Haftung für Inhalte<br/>
+          Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.<br/><br/>
+
+          Haftung für Links<br/>
+          Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.<br/><br/>
+
+          Urheberrecht<br/>
+          Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet. Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.<br/><br/>
+
+          Datenschutz<br/>
+          Die Nutzung unserer Webseite ist in der Regel ohne Angabe personenbezogener Daten möglich. Soweit auf unseren Seiten personenbezogene Daten (beispielsweise Name, Anschrift oder eMail-Adressen) erhoben werden, erfolgt dies, soweit möglich, stets auf freiwilliger Basis. Diese Daten werden ohne Ihre ausdrückliche Zustimmung nicht an Dritte weitergegeben.
+          Wir weisen darauf hin, dass die Datenübertragung im Internet (z.B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht möglich.<br/>
+          Der Nutzung von im Rahmen der Impressumspflicht veröffentlichten Kontaktdaten durch Dritte zur Übersendung von nicht ausdrücklich angeforderter Werbung und Informationsmaterialien wird hiermit ausdrücklich widersprochen. Die Betreiber der Seiten behalten sich ausdrücklich rechtliche Schritte im Falle der unverlangten Zusendung von Werbeinformationen, etwa durch Spam-Mails, vor.<br/><br/>
+
+          Website Impressum erstellt durch impressum-generator.de von der Kanzlei Hasselbach</p>
+    </section>
+  </main>
+    <footer class="footer-impressum">
+      <label>
         <div class="top"></div>
         <div class="middle"></div>
         <div class="bottom"></div>
@@ -54,13 +91,29 @@
       <nav>
         <ul>
           <li>
-            <a href="/impressum.html">Impressum</a>
-          </li>
-          <li>
-            <p>© 2020 Jasmin Stephan</p>
+            <a class="with-background" href="/impressum.html">Impressum,</a>
+            <a class="with-background" href="https://instagram.com/_jsmpn?igshid=smghe464it7r">Instagram</a>
+            <p id="copyright">© 2020 Jasmin Stephan</p>
           </li>
         </ul>
       </nav>
     </footer>
+    <script type="text/javascript">
+      // Unoptimierter JavaScript Code! Damit die figcaption dem Mauscursor folgt
+      // Für jedes Figure Element auf der Seite
+      document.querySelectorAll('figure').forEach((figure) => {
+        // Füge einen Event-Listener für das "mousemove" Event hinzu
+        figure.addEventListener('mousemove', (e) => {
+          const x = e.clientX; // Mausposition X-Achse
+          const y = e.clientY; // Mausposition Y-Achse
+          const self = e.currentTarget; // Das Figure Element
+          const selfRect = self.getBoundingClientRect(); // Die Position und Maße des Figure Elements auf dem Bildschirm
+          const caption = self.querySelector('figcaption'); // Die Caption des Figure Elements
+          // Wenn die Caption existiert, dann zur Mausposition transformieren, damit sie "dem Cursor folgt"
+          // da Position der Caption relativ zur Figure, muss die Position der Figure von den Mauskoordinaten abgezogen werden
+          if (caption) caption.style.transform = `translate(${x - selfRect.left}px, ${y - selfRect.top}px)`;
+        }, { passive: true }); // passiver Listener, für zumindest ein bisschen Optimisierung
+      });
+    </script>
   </body>
 </html>
