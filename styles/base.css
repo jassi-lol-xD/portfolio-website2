@@ -24,6 +24,15 @@ h2 {
   text-transform: uppercase;
 }
 
+/* h2.linksbuendig-mobile {
+  display: block;
+}
+
+h2.linksbuendig-desktop {
+  font-size: 2rem;
+  text-align: left;
+} */
+
 .with-background {
   display: inline-block;
   position: relative;
@@ -53,6 +62,10 @@ a.kursiv {
   font-style: italic;
   font-weight: 600;
   cursor: ne-resize;
+}
+
+p.text-mobile {
+display: none;
 }
 
 code {
@@ -113,14 +126,14 @@ a.headerlink {
 
 header label {
   display: none;
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 30px;
+  height: 24px;  /*Geamtgröße*/
 }
 
 header label div {
   background-color: currentColor; /* Aktuelle Textfarbe */
-  height: 0.5rem;
-  margin-bottom: 0.5rem;
+  height: 4px;
+  margin-bottom: 6px; /*Abstand zwischen linien*/
   transition: transform 350ms ease
 }
 
@@ -144,7 +157,7 @@ header input[type=checkbox]:checked ~ nav {
 }
 
 header input[type=checkbox]:checked ~ label .top {
- transform: translateY(200%) rotate(225deg);
+ transform: translateY(250%) rotate(225deg);   /* Prozentangabe anpassen */
  /* animation: burgerTop 350ms ease forwards; */
 }
 
@@ -153,7 +166,7 @@ header input[type=checkbox]:checked ~ label .middle {
 }
 
 header input[type=checkbox]:checked ~ label .bottom {
-  transform: translateY(-200%) rotate(-225deg);
+  transform: translateY(-250%) rotate(-225deg);    /* Prozentangabe anpassen */
   /* animation: burgerBottom 350ms ease forwards; */
 }
 
@@ -214,29 +227,49 @@ nav.sidebar a svg {
 
 
 
-.main-impressum {
+main .impressum {
   margin-top: 130px;
-  margin-left: 80px;
+  margin-left: 30px;
   margin-bottom: 50px;
   margin-right: 200px;
 }
 
+main .contact {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+main .contact div{
+  padding-top: 100px;
+  width: 60%;
+  padding-left: 15px;
+  padding-bottom: 30px;
+  border-left: 5px solid black;
+}
+
+#contact-main {
+  display: flex;
+  flex-direction: column;
+}
+
 main {
+  flex-grow: 1;
   margin-top: 76px;
   margin-left: 50px;
 }
 
 main .left-right {
   display: flex;
-  border-bottom: 5px solid black;
   align-items: flex-end;
+  border-bottom: 5px solid black;
 }
 
 main .left-right .left {
   width: 55%;
   padding-left: 2rem;
-  padding-right: 8rem;
-  padding-bottom: 4rem;
+  padding-right: 5rem;
+  padding-bottom: 3rem;
 }
 
 main .left-right .right {
@@ -356,18 +389,18 @@ main .left-right .right figure figcaption {
 
 
 .footer-impressum {
-  margin-top: auto;
+  /* margin-top: auto; */
   border-top: 5px solid black;
 }
 
 footer {
   margin-left: 40px;
-  margin-top: auto;
   background-color: white;
   text-align: left;
   padding: 0rem;
   flex-shrink: 0;
 }
+
 footer a {
   text-decoration: none;
   text-transform: uppercase;
@@ -375,11 +408,13 @@ footer a {
   font-size: 0.7rem;
   overflow: hidden;
 }
+
 footer ul {
   list-style-type: none;
   font-size: 0.7rem;
   font-weight: 700;
 }
+
 p#copyright {
   font-size: 0.6rem;
   font-weight: 700;
