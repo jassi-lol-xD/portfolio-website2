@@ -24,14 +24,14 @@ h2 {
   text-transform: uppercase;
 }
 
-/* h2.linksbuendig-mobile {
-  display: block;
+h2.linksbuendig-mobile {
+  display: none;
 }
 
 h2.linksbuendig-desktop {
   font-size: 2rem;
   text-align: left;
-} */
+}
 
 .with-background {
   display: inline-block;
@@ -397,7 +397,6 @@ footer {
   margin-left: 40px;
   background-color: white;
   text-align: left;
-  padding: 0rem;
   flex-shrink: 0;
 }
 

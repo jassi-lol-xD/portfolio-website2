@@ -13,7 +13,8 @@ h2.linksbuendig {
   text-align: left;
 }
 
-/* h2.linksbuendig-mobile {
+h2.linksbuendig-mobile {
+  display: flex;
   font-size: 2rem;
   margin-left: 10px;
   text-align: left;
@@ -21,10 +22,15 @@ h2.linksbuendig {
 
 h2.linksbuendig-desktop {
   display: none;
-} */
+}
 
 p.text-desktop {
   display: none;
+}
+
+.empty-div {
+  /* margin-top: 50px; */
+  border-bottom: 4px solid black;
 }
 
 p.text-mobile {
@@ -220,10 +226,6 @@ main .contact div {
   border-left: 4px solid black;
 }
 
-.empty-div {
-  margin-top: 50px;
-  border-bottom: 4px solid black;
-}
 
 
 footer {
