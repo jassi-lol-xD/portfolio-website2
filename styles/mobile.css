@@ -212,6 +212,11 @@ main .left-right .right figure:hover figcaption {
   display: block;
 }
 
+main .left-right .left figure figcaption,
+main .left-right .right figure figcaption {
+  display: block;
+}
+
 
 main .impressum {
   margin-top: 100px;
