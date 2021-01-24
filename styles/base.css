@@ -406,6 +406,7 @@ footer a {
   font-weight: 800;
   font-size: 0.7rem;
   overflow: hidden;
+  cursor: ne-resize;
 }
 
 footer ul {

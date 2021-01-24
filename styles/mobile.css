@@ -29,7 +29,6 @@ p.text-desktop {
 }
 
 .empty-div {
-  /* margin-top: 50px; */
   border-bottom: 4px solid black;
 }
 
@@ -208,7 +207,10 @@ main .left-right.left-40 .right {
 }
 
 
-
+main .left-right .left figure:hover figcaption,
+main .left-right .right figure:hover figcaption {
+  display: block;
+}
 
 
 main .impressum {
