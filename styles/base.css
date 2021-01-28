@@ -65,7 +65,7 @@ a.kursiv {
 }
 
 p.text-mobile {
-display: none;
+  display: none;
 }
 
 code {
@@ -115,31 +115,32 @@ a.headerlink {
   margin-top: 0.6rem;
 }
 
- a.headerlink-active {
+a.headerlink-active {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 800;
   font-size: 1.3rem;
-  border-bottom: 5px solid currentColor;
+  border-bottom: 0.313rem solid currentColor;
   cursor: ne-resize;
 }
 
 header label {
   display: none;
-  width: 30px;
-  height: 24px;  /*Geamtgröße*/
+  width: 1.875rem;
+  height: 1.5rem;  /*Geamtgröße*/
 }
 
 header label div {
   background-color: currentColor; /* Aktuelle Textfarbe */
-  height: 4px;
-  margin-bottom: 6px; /*Abstand zwischen linien*/
+  height: 0.25rem;
+  margin-bottom: 0.375rem; /*Abstand zwischen linien*/
   transition: transform 350ms ease
 }
 
 header label div.top {
   /* animation: burgerTopReverse 350ms ease forwards; */
 }
+
 header label div.bottom {
   margin-bottom: 0;
   /* animation: burgerBottomReverse 350ms ease forwards; */
@@ -184,21 +185,17 @@ header nav ul li:not(:last-child) {
   margin-right: 5rem;
 }
 
-
-
-
-
 nav.sidebar {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-top: 73px;
-  width: 50px;
+  margin-top: 4.563rem;
+  width: 3.125rem;
   background-color: white;
   position: fixed;
   top: 0;
   bottom: 0;
-  border-right: 5px solid black;
+  border-right: 0.313rem solid black;
 }
 
 nav.sidebar p{
@@ -210,9 +207,9 @@ nav.sidebar p{
   margin-left: 0;
   margin-right: 0;
   margin-bottom: 2.5rem;
-  border-bottom: 5px solid black;
+  border-bottom: 0.313rem solid black;
   padding-bottom: 2.5rem;
-  line-height: 50px;
+  line-height: 3.125rem;
 }
 
 nav.sidebar a {
@@ -225,13 +222,11 @@ nav.sidebar a svg {
   display: block;
 }
 
-
-
 main .impressum {
-  margin-top: 130px;
-  margin-left: 30px;
-  margin-bottom: 50px;
-  margin-right: 200px;
+  margin-top: 8.125rem;
+  margin-left: 1.875rem;
+  margin-bottom: 3.125rem;
+  margin-right: 12.5rem;
 }
 
 main .contact {
@@ -241,11 +236,11 @@ main .contact {
 }
 
 main .contact div{
-  padding-top: 100px;
+  padding-top: 6.25rem;
   width: 60%;
-  padding-left: 15px;
-  padding-bottom: 30px;
-  border-left: 5px solid black;
+  padding-left: 0.938rem;
+  padding-bottom: 1.875rem;
+  border-left: 0.313rem solid black;
 }
 
 #contact-main {
@@ -255,14 +250,14 @@ main .contact div{
 
 main {
   flex-grow: 1;
-  margin-top: 76px;
-  margin-left: 50px;
+  margin-top: 4.75rem;
+  margin-left: 3.125rem;
 }
 
 main .left-right {
   display: flex;
   align-items: flex-end;
-  border-bottom: 5px solid black;
+  border-bottom: 0.313rem solid black;
 }
 
 main .left-right .left {
@@ -274,9 +269,8 @@ main .left-right .left {
 
 main .left-right .right {
   width: 45%;
-  border-left: 5px solid black;
+  border-left: 0.313rem solid black;
 }
-
 
 main .left-right.left-65 .left {
   width: 35%;
@@ -338,11 +332,6 @@ main .left-right:last-of-type {
   /* border-top: 5px solid black; */
 }
 
-
-
-
-
-
 main .left-right .left figure,
 main .left-right .right figure {
   display: flex;
@@ -369,7 +358,6 @@ main .left-right .right figure img {
 
 main .left-right .left figure figcaption,
 main .left-right .right figure figcaption {
-
   position: absolute; /* Könnte auch "relative" sein, wenn sie nicht dem Cursor folgen soll */
   top: 0; /* braucht man nur, wenn sie dem Cursor folgen soll */
   left: 0.7rem; /* braucht man nur, wenn sie dem Cursor folgen soll */
@@ -382,19 +370,17 @@ main .left-right .right figure figcaption {
   font-style: normal;
   font-weight: 400;
   color: black;
-  font-size: 15px;
+  font-size: 1rem;
   /* transition: opacity 500ms ease, visibility 500ms ease; */
 }
 
-
-
 .footer-impressum {
   /* margin-top: auto; */
-  border-top: 5px solid black;
+  border-top: 0.313rem solid black;
 }
 
 footer {
-  margin-left: 40px;
+  margin-left: 2.5rem;
   background-color: white;
   text-align: left;
   flex-shrink: 0;

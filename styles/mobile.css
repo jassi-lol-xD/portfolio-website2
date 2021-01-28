@@ -16,7 +16,7 @@ h2.linksbuendig {
 h2.linksbuendig-mobile {
   display: flex;
   font-size: 2rem;
-  margin-left: 10px;
+  margin-left: 0.625rem;
   text-align: left;
 }
 
@@ -29,7 +29,7 @@ p.text-desktop {
 }
 
 .empty-div {
-  border-bottom: 4px solid black;
+  border-bottom: 0.25rem solid black;
 }
 
 p.text-mobile {
@@ -42,7 +42,7 @@ p.text-mobile {
 
 header {
   padding: 0.7rem;
-  border-bottom: 4px solid black;
+  border-bottom: 0.25rem solid black;
 }
 
 header .logo {
@@ -60,7 +60,7 @@ header label {
 header nav {
   position: fixed;
   left: 0;
-  top: 51px;
+  top: 3.188rem;
   width: 100%;
   background-color: white;
   visibility: hidden;
@@ -75,7 +75,7 @@ header nav ul li {
   justify-content: flex-end;
   height: 9rem;
   padding: 0.5rem;
-  border-bottom: 4px solid black;
+  border-bottom: 0.25rem solid black;
 }
 
 header nav ul li:not(:last-child) {
@@ -101,36 +101,32 @@ a.headerlink {
 }
 
 a.headerlink-active {
- text-decoration: none;
- text-transform: uppercase;
- font-weight: 800;
- font-size: 2rem;
- border-bottom: none;
- cursor: ne-resize;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 2rem;
+  border-bottom: none;
+  cursor: ne-resize;
 }
-
-
 
 nav.sidebar {
   display: none;
 }
 
-
-
 main {
   /* flex-grow: 1; */
-  margin-top: 51px;
+  margin-top: 3.188rem;
   margin-left: 0;
 }
 
-main section div.left.index-mobile{
+main section div.left.index-mobile {
   display: none;
 }
 
 main .left-right {
   display: block;
   position: static;
-  border-bottom: 4px solid black;
+  border-bottom: 0.25rem solid black;
 }
 
 main .no-bottom-border {
@@ -141,13 +137,13 @@ main .left-right .left {
   width: 100%;
   padding-right: 0.5rem;
   padding-bottom: 0rem;
-  border-bottom: 4px solid black;
+  border-bottom: 0.25rem solid black;
 }
 
 main .left-right .right {
   width: 100%;
   border-left: none;
-  border-bottom: 4px solid black;
+  border-bottom: 0.25rem solid black;
 }
 
 main .left-right.left-65 .left {
@@ -206,18 +202,6 @@ main .left-right.left-40 .right {
   width: 100%;
 }
 
-
-main .left-right .left figure:hover figcaption,
-main .left-right .right figure:hover figcaption {
-  display: block;
-}
-
-main .left-right .left figure figcaption,
-main .left-right .right figure figcaption {
-  display: block;
-}
-
-
 main .impressum {
   margin-top: 100px;
   margin-left: 20px;
@@ -230,25 +214,23 @@ main .contact div {
   width: 70%;
   padding-left: 15px;
   padding-bottom: 30px;
-  border-left: 4px solid black;
+  border-left: 0.25rem solid black;
 }
 
-
-
 footer {
-  margin-left: 0px;
+  margin-left: 0rem;
   background-color: white;
   text-align: left;
-  padding: 0px;
+  padding: 0rem;
   flex-shrink: 0;
 }
 
 footer ul {
-  padding-left: 0px;
-  margin-left: 16px;
+  padding-left: 0rem;
+  margin-left: 1rem;
 }
 
 .footer-impressum {
   /* margin-top: auto; */
-  border-top: 4px solid black;
+  border-top: 0.25rem solid black;
 }
