@@ -59,8 +59,8 @@ span.projectheader {
 
 a.kursiv {
   text-decoration: none;
-  font-style: italic;
   font-weight: 600;
+  font-style: italic;
   cursor: ne-resize;
 }
 
@@ -88,7 +88,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  border-bottom: 5px solid black;
+  border-bottom: 0.313rem solid currentColor;
   width: 100%;
   z-index: 2;
 }
