@@ -78,6 +78,10 @@ code {
 
 a {
   color: inherit;
+  /* width: 100%; */
+}
+
+figure a {
   width: 100%;
 }
 
